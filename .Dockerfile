@@ -14,8 +14,8 @@ RUN wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.rep
 RUN yum install -y nginx
 RUN echo "daemon off;" >>/etc/nginx/nginx.conf
 #添加文件需存在当前目录下
-ADD index.html /usr/share/nginx/html/index.html
-RUN echo '<h1>Hello! This message comes from terry2_yu!</h1>' > index.html
+#ADD index.html /usr/share/nginx/html/index.html
+RUN echo '<h1>Hello! This message comes from terry2_yu!</h1>' > /usr/share/nginx/html/index.html
 EXPOSE 80
 #容器启动时执行命令
 CMD /usr/sbin/nginx
