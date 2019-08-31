@@ -1,0 +1,16 @@
+
+HostPort
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-demo-terry2v1
+  labels:
+    app: nginx-demo-terry2v1
+spec:
+    containers:
+      - name: nginx-demo-terry2v1
+        image: yswwhf/ngnix-demo:terry2v1
+        ports:
+          - containerPort: 31120
+            hostPort: 8110
