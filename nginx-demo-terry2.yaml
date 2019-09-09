@@ -12,12 +12,3 @@ spec:
       ports:
         - containerPort: 80
           hostPort: 31121
-      volumeMounts:
-        - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-          name: default-token-7fzcm
-          readOnly: true
-  volumes:
-    - name: default-token-7fzcm
-      secret:
-        defaultMode: 420
-        secretName: default-token-7fzcm
