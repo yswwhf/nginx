@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-demo-terry2vt
+  namespace: acc-wh-terry2
   labels:
     app: nginx-demo-terry2vt
 spec:
